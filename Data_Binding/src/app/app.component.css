@@ -1,0 +1,10 @@
+.maindiv{
+  border: 2px solid red;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+}
+ button{
+  margin:10px;
+
+}

@@ -1,0 +1,22 @@
+<div class="maindiv" [style.margin-top.px]="mt" [style.margin-left.px]="ml" (mouseover)="maindiv($event)">
+  Font size &nbsp;&nbsp;
+  <button mat-button (click)="incfont()" >+</button>
+  <button (click)="decfont()"> -</button>
+  <br>
+  Top Margin
+  <button mat-button (click)="incMT()" > +</button>
+  <button (click)="decMT()">-</button>
+  <br>
+  Left margin<button mat-button (click)="incML()"> +</button>
+  <button (click)="decML()"> -</button>
+  <br>
+<p [(ngModel)]="divfont" #mypara  [style.font-size.px]="divfont" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque expedita incidunt eius nam eaque laborum! Ipsum, ducimus architecto quasi eligendi qui, quae magni, amet at temporibus velit harum? Repudiandae ipsam autem obcaecati earum dicta tempore, sunt qui aut hic facere consectetur debitis mollitia veritatis ab magnam natus, a quod quos.</p>
+</div>
+
+<hr>
+<div>
+  <input type="text" [(ngModel)]="insertpara">
+  <p (mouseover)="hoverme($event)" (dblclick)="dbccl($event)"  >this is first paragrapg</p>
+  <p>this is second paragraph</p>
+</div>
+
